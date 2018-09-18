@@ -73,8 +73,6 @@
   <ItemGroup>
     <Compile Include="Controllers\CatalogControllerTest.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Modules\ItemsParser\ItemsHandlerTest.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
