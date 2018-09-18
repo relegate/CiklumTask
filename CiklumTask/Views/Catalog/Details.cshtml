@@ -1,0 +1,64 @@
+﻿@model CiklumTask.ViewModels.ProductVM
+
+@{
+    ViewBag.Title = "Details";
+}
+@Styles.Render("~/Content/details.css")
+
+<div>
+    <div class="main-content">
+        <h2 class="details-header">Детали</h2>
+        <form id="form1" runat="server">
+            <div id="slideshow">
+                <div id="slideshowWindow">
+                    @foreach (var image in Model.Images)
+                    {
+                        <div class="slide">
+                            <img src="@Href(image)" alt="image is here" width="200" height="300" />
+                        </div>
+                    }
+                </div>
+            </div>
+        </form>
+        <div class="general-info">
+            <h2 class="title">@Model.Name</h2>
+            <div class="main-info">
+                <div class="item-brand" title="Бренд">
+                    <span>@Model.Brand</span>
+                </div>
+                <span class="item-price" title="Цена">
+                    <img src="~/Content/Images/Serp/price-tag-icon.png" width="30" height="30" alt="Цена" />
+                    <span>@Model.Price  @Model.Currency</span>
+                </span>
+                <span class="item-color" title="Цвет">
+                    <img src="~/Content/Images/Serp/color-tag-icon.png" width="30" height="30" alt="Цвет" />
+                    <span>@Model.Color</span>
+                </span>
+                <span class="item-model" title="Модель">
+                    <span>@Model.Model</span>
+                </span>
+                <div class="item-desc">
+                    <span>@Model.Desc</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons-area">
+        @Html.ActionLink("Назад", "Index", "Catalog", FormMethod.Post, new { @class = "button-back" })
+        <a href="javascript:void(0);" id="showPrices" class="button-prices">Изменения цен</a>
+    </div>
+</div>
+
+<div id='myModal' class='modal'>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id='myModalContent'>
+                <img class="graph" src="@Url.Action("EfficiencyChart", "Catalog", Model)" />
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/ViewModel/Details.js")
+}

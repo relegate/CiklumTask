@@ -1,0 +1,72 @@
+﻿#slideshow #slideshowWindow {
+    width: 200px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#slideshow #slideshowWindow .slide {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 300px;
+    float: left;
+    position: relative;
+}
+
+.button-back {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    background-color: lightgrey;
+    float: right;
+    margin: 5% 15%;
+    border: none;
+}
+
+.button-prices {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    background-color: lightgrey;
+    border: none;
+    float: right;
+    margin: 5% -10%;
+}
+
+.graph {
+    margin: 1% 1%;
+}
+
+#form1 {
+    float: left;
+}
+.modal-content {
+    width: 510px; 
+    height: 320px;
+}
+
+.main-content {
+    overflow: hidden;
+    padding: 0% 15%;
+    font-size: 16px;
+}
+.item-brand {
+    padding-bottom: 3%;
+}
+.title {
+    margin-top: 0%;
+    border-bottom: 1px dashed darkgrey;
+    padding: 2% 0% 2%;
+}
+.general-info {
+    overflow: hidden;
+    padding: 0% 4%;
+}
+.details-header {
+    background-color: whitesmoke;
+    border-bottom: 1px dashed darkgrey;
+    padding: 2% 2% 2%;
+}

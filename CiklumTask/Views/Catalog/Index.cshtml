@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Каталог";
+
+}
+<div class="main-content">
+    <h2 class="catalog-header">Каталог</h2>
+    <div data-bind="foreach: Items">
+        <div class="shop-item">
+            <a data-bind="attr:{href:'@Url.Action("ViewDetails","Catalog")?id=' + Id}">
+                <img class="item-image-preview" data-bind="attr: { src: FrontImage }, " width="200" height="300">
+                <div class="item-paddings">
+                    <h2 class="title">
+                        <span data-bind="text: Name"></span>
+                    </h2>
+                    <div class="main-info">
+                        <span class="item-brand" title="Бренд">
+                            <span data-bind="text: Brand"></span>
+                        </span>
+                        <span class="item-price" title="Цена">
+                            <img src="~/Content/Images/Serp/price-tag-icon.png" width="30" height="30" alt="Цена" />
+                            <span data-bind="text: Price"></span>
+                            <span data-bind="text: Currency"></span>
+                        </span>
+                        <span class="item-color" title="Цвет">
+                            <img src="~/Content/Images/Serp/color-tag-icon.png" width="30" height="30" alt="Цвет" />
+                            <span data-bind="text: Color"></span>
+                        </span>
+                        <span class="item-model" title="Модель">
+                            <span data-bind="text: Model"></span>
+                        </span>
+                    </div>
+                    <div class="item-desc">
+                        <p data-bind="text: Desc"></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/Scripts/ViewModel/IndexVM.js")
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiklumTask", "CiklumTask\CiklumTask.csproj", "{549A503A-6ED6-4C1F-BA4C-72905F473AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiklumTask.Tests", "CiklumTask.Tests\CiklumTask.Tests.csproj", "{04E207B4-96E9-426A-A9FF-0DBA16CA65CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{549A503A-6ED6-4C1F-BA4C-72905F473AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549A503A-6ED6-4C1F-BA4C-72905F473AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549A503A-6ED6-4C1F-BA4C-72905F473AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549A503A-6ED6-4C1F-BA4C-72905F473AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E207B4-96E9-426A-A9FF-0DBA16CA65CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E207B4-96E9-426A-A9FF-0DBA16CA65CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E207B4-96E9-426A-A9FF-0DBA16CA65CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E207B4-96E9-426A-A9FF-0DBA16CA65CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B720DC2B-D059-4197-926B-8803F64C5145}
+	EndGlobalSection
+EndGlobal
